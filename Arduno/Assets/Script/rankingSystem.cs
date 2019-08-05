@@ -87,9 +87,9 @@ public class rankingSystem : MonoBehaviour {
         var path = Application.streamingAssetsPath + "/rankingScore.txt";
 
         StreamWriter output;
-        output = new StreamWriter(path, false);
-        //output = new StreamWriter(Application.dataPath + "/Resources/rankingContent/rankingScore.txt", false);
-        output.Write(unitText);
+        //output = new StreamWriter(path, false);
+        output = new StreamWriter(Application.dataPath + "/Resources/rankingContent/rankingScore.txt", false);
+        //output.WriteLine(unitText);
         output.Flush();
         output.Close();
 
